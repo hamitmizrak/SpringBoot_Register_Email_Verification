@@ -81,8 +81,4 @@ import java.util.Collections;
     public boolean isEnabled() {
         return this.enabled;
     }
-
-
-
-
 }

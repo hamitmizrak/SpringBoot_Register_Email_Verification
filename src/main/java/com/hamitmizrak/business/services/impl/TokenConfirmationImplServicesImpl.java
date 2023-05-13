@@ -32,6 +32,4 @@ public class TokenConfirmationImplServicesImpl implements ITokenConfirmationServ
         iTokenConfirmationRepository.deleteById(id);
     }
 
-
-
 }

@@ -2,14 +2,11 @@ package com.hamitmizrak.user.impl;
 
 import com.hamitmizrak.bean.PasswordEncodeBean;
 import com.hamitmizrak.business.services.ITokenConfirmationServices;
-import com.hamitmizrak.business.services.impl.TokenConfirmationImplServicesImpl;
 import com.hamitmizrak.data.entity.TokenConfirmationEntity;
 import com.hamitmizrak.data.entity.UserEntity;
 import com.hamitmizrak.data.repository.IUserRepository;
-
 import com.hamitmizrak.user.IUserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -71,8 +68,8 @@ public class UserServiceImpl implements UserDetailsService, IUserService { //IUs
     @Override
     public String sendMail(String userMail, String token) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("hrpmuhendislik44@gmail.com");
-        message.setTo("hrpmuhendislik44@gmail.com");
+        message.setFrom("denememalatya4444@gmail.com");
+        message.setTo("denememalatya4444@gmail.com");
         String mailSubject = "INC company Üyeliğiniz için son bir adım ";
         message.setSubject(mailSubject);
         String mailContent = "Üyeliğini aktifleştirmek için Lütfen linke tıklayınız." + "http://localhost:2222/confirm?token="+token;
@@ -81,9 +78,4 @@ public class UserServiceImpl implements UserDetailsService, IUserService { //IUs
         return "mail gönderildi";
 
     }
-
-    public static void main(String[] args) {
-    //UserService userService=new UserService();
-    }
-
 }

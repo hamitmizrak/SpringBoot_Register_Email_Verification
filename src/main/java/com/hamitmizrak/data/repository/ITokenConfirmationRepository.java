@@ -8,5 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface ITokenConfirmationRepository extends CrudRepository<TokenConfirmationEntity, Long> {
+
+    // Token bulmak ve silmek için
     Optional<TokenConfirmationEntity> findTokenConfirmationEntityByToken(String token);
 }

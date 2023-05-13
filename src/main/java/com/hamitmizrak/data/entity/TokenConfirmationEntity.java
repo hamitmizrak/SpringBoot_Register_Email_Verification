@@ -1,13 +1,9 @@
 package com.hamitmizrak.data.entity;
-
-import com.hamitmizrak.data.entity.BaseEntity;
-import com.hamitmizrak.data.entity.UserEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.util.UUID;
 
 // LOMBOK
